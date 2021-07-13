@@ -1,4 +1,5 @@
-import { StatusBar } from 'expo-status-bar';
+// import 'react-native-gesture-handler';
+// import { NavigationContainer } from '@react-navigation/native';
 import React from 'react';
 import { 
   StyleSheet, 
@@ -6,7 +7,9 @@ import {
   View,
   TextInput,
   TouchableOpacity,
+  // StatusBar,
 } from 'react-native';
+// import { createStackNavigator, createAppContainer } from 'react-navigation'
 // import Header from './components/test';
 // import Test1 from './components/navbar';
 
@@ -23,17 +26,17 @@ export default function App() {
       
       <Text style={styles.auth}>Ready for the pump? 🦾</Text>
       <TextInput
-      style={styles.input} placeholder="UserName" 
+      style={styles.input} placeholder="Username" 
       />
        <TextInput
-      style={styles.input} placeholder="PassWord" />
+      style={styles.input} placeholder="Password" secureTextEntry/>
 
       <View style={styles.btnContainer}>
         <TouchableOpacity
-        style={styles.btnUser}>
+        style={styles.btnUser} onPress={() => alert('login button working')}>
           <Text style={styles.btnTxt}>Login</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={styles.btnUser}>
+          <TouchableOpacity style={styles.btnUser} onPress={() => alert('signup button works')}>
             <Text style={styles.btnTxt}> SignUp</Text>
           </TouchableOpacity>
       </View>
