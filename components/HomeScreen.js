@@ -6,9 +6,10 @@ import {
   View,
   TextInput,
   TouchableOpacity,
-} from "react-native" 
+} from "react-native"; 
 
-function Home(){
+
+function Home({navigation}){
   return(
     <View
     style={{
@@ -28,8 +29,8 @@ function Home(){
 
     <View style={styles.btnContainer}>
       <TouchableOpacity
-      style={styles.btnUser} onPress={() => alert('login button working')}>
-        <Text style={styles.btnTxt}>Login</Text>
+      style={styles.btnUser} onPress={() => navigation.navigate('History')}>
+        <Text style={styles.btnTxt}>How is it going?</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.btnUser} onPress={() => alert('signup button works')}>
           <Text style={styles.btnTxt}> SignUp</Text>
