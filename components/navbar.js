@@ -1,10 +1,7 @@
-import React from 'react';
+const AppContainer = createAppContainer(AppNavigator);
 
-
-const Test1 = () => {
-    return (
-        <text>Tim sucks at fifa</text>
-      );
-};
-
-export default Test1;
+export default class App extends React.Component {
+  render() {
+    return <AppContainer />;
+  }
+}
