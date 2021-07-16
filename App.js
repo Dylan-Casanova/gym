@@ -13,7 +13,7 @@ function App() {
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Home" screenOptions={{ headerStyle: { backgroundColor: '#164eb6' } }}>
         <Stack.Screen name="Home" component={Home} options={{ title: '', }}/>
-        <Stack.Screen name="History" component={History} />
+        <Stack.Screen name="History" component={History} options={{headerTintColor:"white"}} />
         <Stack.Screen name="Signup" component={SignUp} options={{headerTintColor:"white"}}/>
       </Stack.Navigator>
     </NavigationContainer>
