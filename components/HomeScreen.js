@@ -30,9 +30,9 @@ function Home({navigation}){
     <View style={styles.btnContainer}>
       <TouchableOpacity
       style={styles.btnUser} onPress={() => navigation.navigate('History')}>
-        <Text style={styles.btnTxt}>How is it going?</Text>
+        <Text style={styles.btnTxt}>Login</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.btnUser} onPress={() => alert('signup button works')}>
+        <TouchableOpacity style={styles.btnUser} onPress={() => navigation.navigate("Signup")}>
           <Text style={styles.btnTxt}> SignUp</Text>
         </TouchableOpacity>
     </View>
